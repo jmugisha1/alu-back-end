@@ -6,7 +6,6 @@ import json
 import requests
 import sys
 
-
 def main():
     """main function"""
     user_id = int(sys.argv[1])
@@ -30,7 +29,6 @@ def main():
     file_name = "{}.json".format(user_id)
     with open(file_name, 'w') as file:
         json.dump(output, file)
-
 
 if __name__ == '__main__':
     main()
